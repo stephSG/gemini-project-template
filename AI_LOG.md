@@ -1,0 +1,3 @@
+# AI LOG
+
+Project initialized.
