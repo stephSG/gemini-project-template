@@ -1,13 +1,13 @@
 # AI RULES
 
-- Analyze before acting
-- Follow existing conventions strictly
-- No speculative code
+- Always analyze before acting
+- Follow existing conventions
 - Prefer small, incremental changes
+- No speculative code
 
 Workflow:
 1. Analyze
-2. Summarize understanding
-3. Propose a plan
-4. Wait for approval
-5. Apply minimal diffs
+2. Summarize
+3. Plan
+4. Wait approval
+5. Apply changes

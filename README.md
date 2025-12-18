@@ -1,48 +1,22 @@
-# AI Project Template (Claude + Gemini)
+# Gemini + Claude Compatible Project
 
-This repository is a ready-to-use template that allows you to work **interchangeably**
-with **Claude Code** and **Gemini CLI** on the same project.
+This project is preconfigured to work with:
+- Gemini CLI (interactive, Claude-like behavior)
+- Claude Code (native support)
 
-## What this gives you
-- One set of rules shared by all AIs
-- Claude Code compatibility (CLAUDE.md + .claude/)
-- Gemini CLI launcher disciplined like Claude
-- Versioned AI rules (audit-friendly)
+## Usage
 
-## How to use
-
-### 1. Unzip & init git
+### Start Gemini in Claude-like mode
 ```bash
-git init
-git add .
-git commit -m "chore(init): AI project template"
+./scripts/gemini-claude.sh
 ```
 
-### 2. Use Gemini
-```bash
-./scripts/gemini-start
-```
-Type your request, then press **Ctrl+D**.
+Gemini starts normally, but with rules injected at startup.
 
-### 3. Use Claude Code
-Open the repository in Claude Code.
-Claude will automatically read `CLAUDE.md` and apply the same rules.
+### Use Claude Code
+Open the project in Claude Code.
+Rules are read from CLAUDE.md automatically.
 
-### 4. First recommended step
-Ask the AI:
-> Analyze the repository and summarize architecture and conventions.
-
-Then copy the result into:
-```
+## First step
+Ask the AI to analyze the project and write results into:
 docs/ai-context.md
-```
-
-Commit it.
-
-## Philosophy
-- AI does not replace engineers
-- AI must be constrained
-- Rules > prompts
-- Version everything
-
-Enjoy 🚀

@@ -1,3 +1,7 @@
-# Project Context
+# Project AI Context
 
-Describe architecture, stack, conventions, and risks here.
+Describe:
+- Architecture
+- Tech stack
+- Conventions
+- Risks
