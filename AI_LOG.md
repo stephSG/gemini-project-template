@@ -1,3 +1,4 @@
 # AI LOG
 
-Project initialized.
+## Initial setup
+AI governance initialized.

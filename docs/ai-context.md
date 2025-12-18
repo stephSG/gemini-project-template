@@ -1,1 +1,3 @@
-# AI Project Context
+# Project Context
+
+Describe architecture, stack, conventions, and risks here.

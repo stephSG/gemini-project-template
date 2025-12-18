@@ -1,2 +1,22 @@
 #!/usr/bin/env bash
-echo Gemini starter
+set -euo pipefail
+
+GEMINI_BIN="${GEMINI_BIN:-/usr/local/bin/gemini}"
+
+echo "Describe your task then Ctrl+D:"
+TASK=$(cat)
+
+PROMPT=$(cat <<EOF
+You are a senior engineer working in this repository.
+
+$(cat AI_RULES.md)
+$(cat AI_GIT_RULES.md)
+$(cat docs/ai-context.md)
+
+TASK:
+$TASK
+EOF
+)
+
+printf "%s
+" "$PROMPT" | "$GEMINI_BIN"
